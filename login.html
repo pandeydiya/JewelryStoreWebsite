@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+input[type=text], input[type=password] 
+{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #000;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #000;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+
+span.psw {
+  float: right;
+}
+
+.SearchText
+{
+   border:solid 1px #AA822F;
+   border-radius:4px; 
+   padding:4px;
+   padding-right:3px;
+   width:100px;
+   height:40px;
+}
+
+.SearchButton
+{
+   border:none;
+   background-color:transparent;
+   margin-right:0px;
+   margin-left:-0px;
+   line-height:100px;
+   height:16px;
+   cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div >
+<a href="index.html">
+<center>
+<img class="header-logo" src="img/bg1.jpg" >
+</center></a>
+
+<div class="topnav">
+<a class="active" href="index.html">Home</a>
+<a href="category.html">Category</a>
+<a href="gallery.html">Gallery</a>
+<a href="contact.html">Contact US</a>
+<a href="feedback.html">Feedback</a>
+<a href="login.html">Login</a>
+<a href="signup.html">Sign UP</a>
+<a href="aboutus.html">ABOUT US</a>
+<a form role="search" method="get" action="http://google.com/search?q=" target="_blank">
+   <input type="text" name="q" placeholder="Search..." class="SearchText" />
+   <button type="submit" class="SearchButton" title="Submit the search"></button>
+</form> </a>
+</div>
+</div>
+
+<h2>LOGIN</h2>
+
+<form action="/action_page.php" method="post">
+  <div class="imgcontainer">
+    <img src="img/bg1.jpg" alt="image" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+</body>
+</html>

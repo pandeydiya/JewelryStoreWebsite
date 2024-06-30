@@ -1,0 +1,211 @@
+<html>
+<head>
+<link rel = "stylesheet" href="style.css">
+
+<style type="text/css">
+
+.SearchText
+{
+   border:solid 1px #AA822F;
+   border-radius:4px; 
+   padding:4px;
+   padding-right:3px;
+   width:100px;
+   height:40px;
+}
+
+.SearchButton
+{
+   border:none;
+   background-color:transparent;
+   margin-right:0px;
+   margin-left:-0px;
+   line-height:100px;
+   height:16px;
+   cursor:pointer;
+}
+body 
+{
+font-family: Arial, Helvetica, sans-serif;
+}
+
+*{
+box-sizing: border-box;
+}
+
+input[type=text], input[type=password] 
+{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: black;
+}
+
+input[type=text]:focus, input[type=password]:focus 
+{
+  background-color: white;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button 
+{
+  background-color: black;
+  color:  gray;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover 
+{
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn 
+{
+  padding: 14px 20px;
+  background-color: lightgray;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn 
+{
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container 
+{
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal 
+{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: grey;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content
+{
+  background-color: White;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #889;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr 
+{
+  border: 1px solid # white: ; 
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close 
+{
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: white ;
+}
+
+.close:hover,
+.close:focus 
+{
+  color: ;grey
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after 
+{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn
+  {
+     width: 100%;
+  }
+}
+</style>
+
+</head>
+
+<body>
+
+<div >
+<a href="index.html">
+<center>
+<img class="header-logo" src="img/bg1.jpg" >
+</center></a>
+
+<div class="topnav">
+<a class="active" href="index.html">Home</a>
+<a href="category.html">Category</a>
+<a href="gallery.html">Gallery</a>
+<a href="contact.html">Contact US</a>
+<a href="feedback.html">Feedback</a>
+<a href="login.html">Login</a>
+<a href="signup.html">Sign UP</a>
+<a href="aboutus.html">ABOUT US</a>
+<a form role="search" method="get" action="http://google.com/search?q=" target="_blank">
+   <input type="text" name="q" placeholder="Search..." class="SearchText" />
+   <button type="submit" class="SearchButton" title="Submit the search"></button>
+</form> </a>
+</div>
+</div>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>

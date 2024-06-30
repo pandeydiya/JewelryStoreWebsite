@@ -1,0 +1,59 @@
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Cantarell:400,400i,700,700i" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body bgcolor="orange">
+
+<div >
+<a href="index.html"><img class="header-logo" src="img/download.png"></a>
+<ul class="main-header">
+<li class="active"><a href="index.html">home</a></li>
+<li><a href="aboutus.html">about us</a></li>
+<li><a href="category.html">category</a></li>
+<li><a href="gallery.html">gallery</a></li>
+<li><a href="contact.html">contact</a></li>
+<li><a href="feedback.html">feedback</a></li>
+</ul>
+</div>
+
+<div class="hero-img">
+<img src="img/indexmain.jpeg" class="img-100">
+<h1><marquee>Welcome to Elements</marquee></h1>
+</div>
+
+<div class="text-center">
+<h2>
+<span>Welcome</span> To Our Jewellery Store
+</h2>
+</div>
+
+<div>
+<center><table border="1" bgcolor="#dddddd" class="img-100" >
+<tr>
+<th colspan="2"><h2>OUR SPECIALITIES<h2></th></tr>
+<tr>
+<td><h3>UNIQUE DESIGN</H3></td>
+<td><img src="img/main.jpg" class="img-100"></td>
+</tr>
+<tr>
+<td><img src="img/main2.jpg"class="img-100"></td>
+<td><h3>BEST SERVICE</h3></td>
+</tr>
+</table></center>
+</div>
+
+<br>
+<br>
+
+<footer class="footer-style text-center col-1">
+<a href="index.html"><img class="header-logo" src="img/download1.png"></a>
+<p>Juhu Versova Link Rd,Bharat Nagar,Four Bunglows,Andheri(West),Mumbai-400053</p>
+<a href="tel:+1 800 000 111">+1 800 000 111</a><br>
+<a href="mailto:contact@example.com">contact@example.com</a><br>
+Monday-Sunday:<br>
+Timings:9AM – 10PM<br>
+</footer>
+</body>
+</html>
